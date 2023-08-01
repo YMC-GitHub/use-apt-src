@@ -470,7 +470,7 @@ case "$zero_app_uas_cmd" in
         del_backup ;exit 0;
     ;;
     use)
-        todo use_backup ;exit 0;
+        use_backup ;exit 0;
     ;;
     download)
         todo download_backup;exit 0;
