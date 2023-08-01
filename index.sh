@@ -406,7 +406,7 @@ echo "remote-file: $f_remote_url"
 
 # zero:task:s:backup-apt-source
 # add: add backup
-function add_bacup(){
+function add_backup(){
     # ubuntu_codename=`lsb_release -a | grep Codename | sed "s/Codename:\t*//g"`
     # ubuntu_release=`lsb_release -a | grep Release | sed "s/Release:\t*//g"`
 
@@ -464,7 +464,7 @@ case "$zero_app_uas_cmd" in
         get_backup ;exit 0;
     ;;
     add)
-        todo add_bacup ;exit 0;
+        add_backup ;exit 0;
     ;;
     del)
         todo del_backup ;exit 0;
