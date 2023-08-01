@@ -461,7 +461,7 @@ case "$zero_app_uas_cmd" in
         log_cnf_backup ;exit 0;
     ;;
     get)
-        todo get_backup ;exit 0;
+        get_backup ;exit 0;
     ;;
     add)
         todo add_bacup ;exit 0;
