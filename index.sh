@@ -473,7 +473,7 @@ case "$zero_app_uas_cmd" in
         use_backup ;exit 0;
     ;;
     download)
-        todo download_backup;exit 0;
+        download_backup;exit 0;
     ;;
 esac
 
