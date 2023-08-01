@@ -453,7 +453,7 @@ function download_backup(){
 # zero:task:e:backup-apy-source
 
 function todo(){
-    echo "$1"
+    echo "todo: $1"
 }
 
 case "$zero_app_uas_cmd" in
