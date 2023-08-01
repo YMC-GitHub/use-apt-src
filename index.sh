@@ -467,7 +467,7 @@ case "$zero_app_uas_cmd" in
         add_backup ;exit 0;
     ;;
     del)
-        todo del_backup ;exit 0;
+        del_backup ;exit 0;
     ;;
     use)
         todo use_backup ;exit 0;
