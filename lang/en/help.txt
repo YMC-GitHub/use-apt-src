@@ -1,0 +1,20 @@
+usage: 
+{ns} <cmd> <os-release> <apt-src-name>
+
+demo:
+    {ns} cnf 22.04 tsinghua
+    {ns} get 22.04 tsinghua
+    {ns} add 22.04 tsinghua
+    {ns} del 22.04 tsinghua
+    {ns} use 22.04 tsinghua
+    {ns} download 22.04 tsinghua
+
+command:
+    version -- output cli version
+    help -- output usage
+
+options:
+    -o,--outdir <value> -- set backup dir . defalut is /etc/apt/
+    -f,--file <value> -- set cnf file . default is /etc/apt/sources.list
+    -h,--help -- info help usage
+    -v,--version -- info version
