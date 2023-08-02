@@ -1,37 +1,11 @@
 # use-apt-src
 
-using apt source on ubuntu
+update apt source on ubuntu in China , switching china source and other source. through sed replacing or backup script.
 
 ## features
-- [x] get current file
-- [x] add backup file
-- [x] del backup file
-- [x] use backup file
-- [x] download backup file
-- [x] use apt source in china with sed replacing
+- [x] update apt source (ubuntu/tsqinghua/aliyun/163 source) with sed replacing
 
-## components
-- [x] using apt source qinghua on ubuntu 22.04
-- [x] using apt source qinghua on ubuntu 20.04
-- [x] using apt source qinghua on ubuntu 18.04
-
-
-## using backup script
-
-```bash
-# download source code in china with git 
-GC_PROXY="https://ghproxy.com/"
-GC_URL="https://github.com/YMC-GitHub/use-apt-src"
-GC_URL="${GC_PROXY}${GC_URL}"
-git clone -b main "$GC_URL"
-
-# get script usage
-./use-apt-src/index.sh -h
-
-
-```
-
-## using replace script
+## using replace script (recomended)
 ```bash
 # only download replace.sh file
 # curl -O https://ghproxy.com/https://raw.githubusercontent.com/ymc-github/use-apt-src/main/replace.sh
@@ -60,6 +34,32 @@ git clone -b main "$GC_URL"
 # or
 # curl -sfL https://ghproxy.com/https://raw.githubusercontent.com/ymc-github/use-apt-src/main/replace.sh | sh
 ```
+
+## using backup script
+
+```bash
+# download source code in china with git 
+GC_PROXY="https://ghproxy.com/"
+GC_URL="https://github.com/YMC-GitHub/use-apt-src"
+GC_URL="${GC_PROXY}${GC_URL}"
+git clone -b main "$GC_URL"
+
+# get script usage
+./use-apt-src/index.sh -h
+
+# get current using
+use-apt-src/index.sh get 22.04 tsinghua
+# download
+use-apt-src/index.sh download 22.04 tsinghua
+# use
+use-apt-src/index.sh use 22.04 tsinghua
+# del
+use-apt-src/index.sh del 22.04 tsinghua
+# add
+use-apt-src/index.sh add 22.04 tsinghua
+```
+
+current support qinghua on ubuntu 18.04/20.04/22.04 with backup script .
 
 
 ## Author
