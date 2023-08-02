@@ -32,12 +32,17 @@ git clone -b main "$GC_URL"
 
 ## using replace script
 ```bash
-# ./replace.sh -h
+# only download replace.sh file
+# curl -O https://ghproxy.com/https://raw.githubusercontent.com/ymc-github/use-apt-src/main/replace.sh
 
+# ./replace.sh -h
 # su [options] [-] [<user> [<argument>...]]
 # su - $USER
 ./replace.sh tsqinghua
 ./replace.sh aliyun
+
+# or
+# curl -sfL https://ghproxy.com/https://raw.githubusercontent.com/ymc-github/use-apt-src/main/replace.sh | sh
 ```
 
 
