@@ -33,6 +33,13 @@ update apt source on ubuntu in China , switching china source and other source. 
 
 # or
 # curl -sfL https://ghproxy.com/https://raw.githubusercontent.com/ymc-github/use-apt-src/main/replace.sh | sh
+
+# or you can download to some project's some dir. eg:
+# mkdir -p ./tool/use-apt-src
+# curl -o ./tool/use-apt-src/replace.sh https://ghproxy.com/https://raw.githubusercontent.com/ymc-github/use-apt-src/main/replace.sh
+# chmod +x ./tool/use-apt-src/replace.sh
+# ./tool/use-apt-src/replace.sh -h
+
 ```
 
 ## using backup script
