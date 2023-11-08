@@ -98,9 +98,9 @@ case "$name" in
 esac
 
 # update - update list of available packages
-apt update
+apt update -y
 # upgrade - upgrade the system by installing/upgrading packages
-apt upgrade
+apt upgrade -y
 }
 
 main "$@"
